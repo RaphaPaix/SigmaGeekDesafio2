@@ -11,10 +11,10 @@ public class LerPi {
 		//esse codigo le o arquivo arbitrariamente
 		//o arquivo pi.txt contem 1 milhao de decimais do pi (no site informa 1bi)
 		//foi obtido no site: https://archive.org/details/Pi-1b-digit
-		FileInputStream entrada = new FileInputStream("C:\\workspace-curso-java\\nivel2_sigmageek\\src\\nivel2_sigmageek\\pi.txt"); //copiamos o endereço do arquivo pi
+		FileInputStream entrada = new FileInputStream("C:\\workspace-curso-java\\nivel2_sigmageek\\src\\nivel2_sigmageek\\pi2.txt"); //copiamos o endereço do arquivo pi
 	     InputStreamReader entradaFormatada = new InputStreamReader(entrada);
 	     int c = entradaFormatada.read();
-	     int tamanho=1000002;
+	     int tamanho=1000102;
 	     char[] caracteresPi = new char[tamanho-2];
 	     int contador=0;
 	     //deve-se considerar o numero 3 e o ponto como char
@@ -65,12 +65,12 @@ public class LerPi {
 			}
 	     }
 	     //teste impressao vetor
-	     /*
-	     System.out.println("\n5 finais do Vetor Int: ");
+	     
+	     System.out.println("\n finais do Vetor Int: ");
 	     for(int i=999995;i<tamanho-2;i++) {
 	    	 System.out.printf("%d",dPi[i]);
 	     }
-	     */
+	     
 	     System.out.println("\nTamanho: "+dPi.length);
 	     //agora vamos encontrar palindromos
 	   //criar um vetor de posiçao para auxiliar
